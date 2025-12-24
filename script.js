@@ -1,8 +1,9 @@
-//your JS code here. If required.
-let counter = document.getElementById("counter");
-let button = document.getElementById("incrementBtn");
+document.addEventListener("DOMContentLoaded", function () {
+  const counter = document.getElementById("counter");
+  const button = document.getElementById("incrementBtn");
 
-button.addEventListener("click", () => {
-  alert(counter.textContent); // un-incremented value
-  counter.textContent = Number(counter.textContent) + 1;
+  button.addEventListener("click", function () {
+    alert(counter.textContent);
+    counter.textContent = Number(counter.textContent) + 1;
+  });
 });
