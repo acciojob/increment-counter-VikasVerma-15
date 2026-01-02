@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("incrementBtn");
 
   button.addEventListener("click", function () {
-    alert(counter.textContent);
+    alert(Number(counter.textContent));
     counter.textContent = Number(counter.textContent) + 1;
   });
 });
